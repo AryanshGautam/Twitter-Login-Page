@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="login.css">
+</head>
+<body>
+    
+    <div class="parent">
+        <!--Left Side-->
+        <div class="leftside">
+            <div class="ticon">
+                <i class="fa-brands fa-twitter fa-5x" style="color: #ffffff;"></i>
+                <h2 class="lefthead">TWITTER</h2>
+            </div>
+
+            <div class="lefttext"> See what's happening in the world <br> right now!</div>
+
+            <div class="icon"><i class="fa-solid fa-map"></i></div><br>
+            <br>
+            <div class="icontext">Stay connected with everyone</div><br>
+            <div class="icon"><i class="fa-solid fa-lock"></i></div><br>
+            <br>
+            <div class="icontext">Privacy</div><br>
+            <div class="icon"><i class="fa-solid fa-magnifying-glass"></i></div><br>
+            <br>
+            <div class="icontext">Follow your intrests</div><br>
+            <div class="icon"><i class="fa-solid fa-group-arrows-rotate"></i></div><br>
+            <br>
+            <div class="icontext">Join the communities</div><br>
+            <div class="icon"><i class="fa-solid fa-user-group"></i></div><br>
+            <br>
+            <div class="icontext">Find your friends</div><br>
+            <div class="icon"><i class="fa-solid fa-share-nodes"></i></div><br>
+            <br>
+            <div class="icontext">Share your story</div>
+        </div>
+
+        <!--Center-->
+
+        <div class="move">
+            <div class="whitecir"><div class="centertweet"><span><i class="fa-brands fa-twitter fa-6x" style="color: #ffffff;"></i></span></div></div>
+        </div>
+
+        <!--Right Side-->
+
+        
+            <div class="login"><button type="button">LOGIN</button></div>
+            <div class="signup"><button type="button">SIGNUP</button></div>
+        
+            <!-- Form Validation-->
+
+            <div id="form-container">
+                <form action="" onsubmit="return validate()">
+                    <input type="text" placeholder="User Name" id="username"><br>
+                    <p id="usererror" class="error"></p>
+                    <input type="password" placeholder="Password" id="pass"><br>
+                    <p id="passerror" class="error"></p>
+                    <input type="submit" id="submitbtn">
+                </form>
+            </div>
+    </div>
+
+    <script src="login.js"></script>
+</body>
+</html>
